@@ -100,6 +100,7 @@
 }
 
 .show-more-btn {
+  display: flex;
   border: none; /* Видаляє бордер */
   border-radius: 16px;
   width: 160px;
