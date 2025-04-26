@@ -35,7 +35,7 @@
 }
 
 @media (min-resolution: 2x) and (max-width: 767px) {
-  .menu-page {
+  .menu-overlay {
     background-image: linear-gradient(rgba(12, 12, 12, 0.92)),
       url(../img/menu-fon/fon-clock-mob@2x-min.jpg);
   }
@@ -149,6 +149,18 @@
 }
 
 @media screen and (min-width: 768px) {
+  .menu-overlay {
+    background-image: linear-gradient(rgba(12, 12, 12, 0.92)),
+      url(/img/menu-fon/fon-clock-tab-min.jpg);
+  }
+
+  @media (min-resolution: 2x) and (min-width: 768px) {
+    .menu-overlay {
+      background-image: linear-gradient(rgba(12, 12, 12, 0.92)),
+        url(/img/menu-fon/fon-clock-tab@2x-min.jpg);
+    }
+  }
+
   .menu-container {
     padding-bottom: 50px;
   }
