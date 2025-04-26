@@ -49,6 +49,11 @@
 }
 
 @media only screen and (min-width: 768px) {
+  .section-story {
+    max-width: 704px;
+    margin: 0 auto 80px auto;
+  }
+
   .story-container {
     padding: 80px 64px;
   }
@@ -62,6 +67,10 @@
 }
 
 @media only screen and (min-width: 1280px) {
+  .section-story {
+    max-width: 1150px;
+    margin: 0 auto 100px auto;
+  }
   .story-container {
     padding: 83px 80px;
     display: flex;
@@ -70,9 +79,11 @@
 
   .story-text {
     max-width: 690px;
+    margin-bottom: 0;
   }
 
   .story-contact-link {
-    align-self: flex-start;
+    width: 160px;
+    height: 48px;
   }
 }
