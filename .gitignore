@@ -21,4 +21,11 @@ dist-ssr
 *.ntvs*
 *.njsproj
 *.sln
+<<<<<<< HEAD
 *.sw?
+=======
+*.sw?
+
+# pull requests list
+pullrequests-list.txt
+>>>>>>> 251d32b6e0a410d127e40d8091e02cafed56e160
