@@ -1,44 +1,141 @@
-.header {
-  padding: 20px 0;
+/* === Базовые стили (мобилка + планшет) === */
+.container {
+  max-width: 320px;
+  margin: 0 auto;
+  padding: 0 16px;
 }
-.nav {
+
+.header {
+  background-color: #ffffff;
+  padding: 16px 0;
+  border-bottom: 1px solid #e7e9fc;
+}
+
+.header-container {
   display: flex;
   justify-content: space-between;
-}
-.nav-logo {
-  display: inline-flex;
   align-items: center;
-  justify-content: center;
 }
-.nav-list {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  gap: 40px;
+
+.logo {
+  font-family: 'Gilroy', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: lowercase;
+  text-decoration: none;
+  color: #0c0c0c;
 }
-.nav-link {
-  position: relative;
+
+.burger-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
   display: block;
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  transition: 200ms ease-in;
 }
-.nav-link:hover,
-.nav-link:focus {
-  color: #747bff;
+
+.burger-icon {
+  width: 34px;
+  height: 34px;
+  fill: #1c1c1c;
 }
-.nav-link::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%) translateY(100%);
-  width: 110%;
-  height: 4px;
-  border-radius: 4px;
-  transform-origin: center;
-  animation: stretch 400ms cubic-bezier(0.68, -0.55, 0.27, 1.55) 200ms both;
+
+.header-nav,
+.social-icons {
+  display: none;
 }
-.nav-link.active::after {
-  background: #747bff;
+
+/* Планшет */
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0 24px;
+  }
+}
+
+/* Десктоп */
+@media (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+    padding: 0 15px;
+  }
+
+  .burger-btn {
+    display: none;
+  }
+
+  .header-nav {
+    display: block;
+  }
+
+  .nav-list {
+    display: flex;
+    gap: 32px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav-list .link {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    color: #1c1c1c;
+    transition: color 250ms;
+  }
+
+  .nav-list .link:hover,
+  .nav-list .link:focus {
+    color: #4d5ae5;
+  }
+  .link {
+    position: relative;
+    color: #1c1c1c;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    transition: color 250ms ease;
+  }
+
+  .link:hover,
+  .link:focus {
+    color: #4d5ae5;
+  }
+
+  /* Активный пункт меню */
+  .link.current {
+    color: #4d5ae5;
+  }
+
+  .link.current::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -6px; /* Положение точки под текстом */
+    width: 6px;
+    height: 6px;
+    background-color: #4d5ae5;
+    border-radius: 50%; /* Делаем точку круглой */
+  }
+
+  .social-icons {
+    display: flex;
+    gap: 16px;
+    list-style: none;
+  }
+
+  .social-icons a {
+    display: flex;
+  }
+
+  .social-icons svg {
+    width: 24px;
+    height: 24px;
+    fill: #1c1c1c;
+    transition: fill 0.3s;
+  }
+
+  .social-icons a:hover svg {
+    fill: #4d5ae5;
+  }
 }
