@@ -1,5 +1,6 @@
 .section-contact {
-  margin-bottom: 40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .contact-title {
@@ -87,7 +88,8 @@
 
 @media screen and (min-width: 768px) {
   .section-contact {
-    margin-bottom: 60px;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
   .contact-title {
     font-size: 48px;
@@ -131,7 +133,8 @@
 }
 @media screen and (min-width: 1280px) {
   .section-contact {
-    margin-bottom: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
   .contact-box {
     flex-direction: row;
