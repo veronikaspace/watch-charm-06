@@ -1,8 +1,7 @@
-/* === Базовые стили (мобилка + планшет) === */
+
 .container {
   max-width: 320px;
-  margin: 0 auto;
-  padding: 0 16px;
+
 }
 
 .header {
@@ -44,20 +43,14 @@
   display: none;
 }
 
-/* Планшет */
+
 @media (min-width: 768px) {
-  .container {
-    max-width: 768px;
-    padding: 0 24px;
-  }
+
 }
 
-/* Десктоп */
+
 @media (min-width: 1158px) {
-  .container {
-    max-width: 1158px;
-    padding: 0 15px;
-  }
+  
 
   .burger-btn {
     display: none;
