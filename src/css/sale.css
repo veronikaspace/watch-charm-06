@@ -1,5 +1,6 @@
 .section-sale {
-  padding-bottom: 60px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .sale-header {
@@ -142,7 +143,8 @@
 
 @media only screen and (min-width: 768px) {
   .section-sale {
-    padding-bottom: 80px;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 
   .sale-header {
@@ -228,7 +230,8 @@
 
 @media only screen and (min-width: 1280px) {
   .section-sale {
-    padding-bottom: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 
   .sale-images-list {
