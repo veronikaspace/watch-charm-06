@@ -4,7 +4,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 20px 60px;
+  padding: 30px 20px;
   margin: 0 auto;
   max-width: 100%;
 }
@@ -17,13 +17,9 @@
 }
 
 .catalog-section-title {
-  font-family: 'Gilroy', sans-serif;
   font-size: 32px; /* Розмір шрифту для заголовка */
-  font-weight: 600; /* Жирність тексту */
   line-height: 1; /* Міжрядковий інтервал */
-  letter-spacing: -0.02em;
   margin-bottom: 24px; /* Відстань між заголовком і картками */
-  color: #0c0c0c;
   text-align: left; /* Вирівнювання тексту по лівому краю */
   align-self: flex-start; /* Вирівнює заголовок по лівому краю */
 }
@@ -35,9 +31,6 @@
   gap: 20px; /* Відстань між картками */
   flex-wrap: wrap;
   justify-content: center;
-  /* width: 100%;
-  max-width: 1280px;
-  margin: 0 auto; */
 }
 
 .catalog-card {
@@ -74,12 +67,7 @@
 }
 
 .catalog-card-title {
-  font-size: 'Gilroy', sans-serif;
-  font-weight: 500;
   font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: -0.02em;
-  color: #0c0c0c;
   margin-bottom: 8px; /* Відступ між заголовком і описом */
   text-align: left;
 }
@@ -130,7 +118,7 @@
 @media screen and (min-width: 768px) {
   .section-catalog {
     max-width: 768px;
-    padding: 0 32px 80px;
+    padding: 40px 32px;
   }
 
   .catalog-section-title {
@@ -184,14 +172,14 @@
     max-width: 280px; /* Обмеження ширини тексту */
   }
 }
-/* desctop */
+/* desktop */
 
 @media screen and (min-width: 1280px) {
   .section-catalog {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0 65px 100px;
+    padding: 50px 65px;
     margin: 0 auto;
     max-width: 1280px;
   }
