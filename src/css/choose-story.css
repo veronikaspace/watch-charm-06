@@ -1,6 +1,6 @@
 .section-story {
   background-color: #0c0c0c;
-  margin: 0 20px 60px 20px;
+  margin: 30px 20px 30px 20px;
   border-radius: 30px;
 }
 
@@ -51,7 +51,7 @@
 @media only screen and (min-width: 768px) {
   .section-story {
     max-width: 704px;
-    margin: 0 auto 80px auto;
+    margin: 40px auto 40px auto;
   }
 
   .story-container {
@@ -69,7 +69,7 @@
 @media only screen and (min-width: 1280px) {
   .section-story {
     max-width: 1150px;
-    margin: 0 auto 100px auto;
+    margin: 50px auto 50px auto;
   }
   .story-container {
     padding: 83px 80px;
