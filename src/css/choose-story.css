@@ -1,11 +1,22 @@
 .section-story {
-  background-color: #0c0c0c;
-  margin: 30px 20px 30px 20px;
-  border-radius: 30px;
+  padding: 30px 20px 30px 20px;
 }
 
 .story-container {
   padding: 60px 0 60px 28px;
+  background-color: #0c0c0c;
+  border-radius: 30px;
+  background-image: url(/img/story/story-img-mob-min.png);
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@media screen and (min-resolution: 2x), (-webkit-device-pixel-ratio: 2) {
+  .story-container {
+    background-image: url(/img/story/story-img-mob-2x-min.png);
+  }
 }
 
 .visually-hidden {
@@ -50,12 +61,20 @@
 
 @media only screen and (min-width: 768px) {
   .section-story {
-    max-width: 704px;
-    margin: 40px auto 40px auto;
+    margin: 0 auto;
+    padding: 40px 0;
   }
 
   .story-container {
+    max-width: 704px;
     padding: 80px 64px;
+    background-image: url(/img/story/story-img-tab-min.png);
+  }
+
+  @media screen and (min-resolution: 2x), (-webkit-device-pixel-ratio: 2) {
+    .story-container {
+      background-image: url(/img/story/story-img-tab-2x-min.png);
+    }
   }
 
   .story-text {
@@ -68,13 +87,21 @@
 
 @media only screen and (min-width: 1280px) {
   .section-story {
-    max-width: 1150px;
-    margin: 50px auto 50px auto;
+    padding: 50px 0;
   }
+
   .story-container {
+    max-width: 1150px;
     padding: 83px 80px;
     display: flex;
     gap: 140px;
+    background-image: url(/img/story/story-img-desk-min.png);
+  }
+
+  @media screen and (min-resolution: 2x), (-webkit-device-pixel-ratio: 2) {
+    .story-container {
+      background-image: url(/img/story/story-img-desk-2x-min.png);
+    }
   }
 
   .story-text {
