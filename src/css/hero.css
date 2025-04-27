@@ -1,5 +1,5 @@
 .hero-container {
-  margin-bottom: 60px;
+  padding: 60px 20px 30px 20px;
 }
 
 .hero-text {
@@ -25,16 +25,13 @@
   letter-spacing: -0.02em;
   color: rgba(12, 12, 12, 0.7);
   margin-bottom: 28px;
+  font-size: 14px;
 }
 
 .hero-wrapper {
   display: flex;
   justify-content: space-between;
   margin-bottom: 28px;
-}
-
-.hero-reviews {
-  position: relative;
 }
 
 .hero-list {
@@ -88,8 +85,7 @@
 
 @media only screen and (min-width: 768px) {
   .hero-container {
-    padding: 0 32px;
-    margin-bottom: 80px;
+    padding: 80px 32px 40px 32px;
   }
 
   .hero-content {
@@ -112,6 +108,7 @@
   .hero-descr {
     line-height: 1.25;
     max-width: 480px;
+    font-size: 16px;
   }
 
   .hero-wrapper {
@@ -146,13 +143,8 @@
 }
 
 @media only screen and (min-width: 1280px) {
-  .container {
-    max-width: 1280px;
-  }
-
   .hero-container {
-    padding: 0 65px;
-    margin-bottom: 100px;
+    padding: 80px 65px 50px 65px;
   }
 
   .hero-content {
