@@ -1,48 +1,42 @@
-/* ================================
-   Базові мобільні стилі (від 320px)
-   ================================ */
-   footer {
-    padding-left: 20px;
-    padding-right: 20px;
+
+  .footer-container {
+    width: 100%; 
+    padding: 30px 20px;
   }
-  
   .footer-group {
-    width: 100%;
-    max-width: 320px;
-    margin: 0 auto;
-    padding: 40px 28px 28px;
+    padding: 40px 28px 28px 28px;
     background: #0c0c0c;
     border-radius: 30px;
     display: flex;
     flex-direction: column;
     gap: 92px;
-    margin-bottom: 20px;
   }
-  
-  .footer-top-section {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-  }
-  
+
+    .footer-top-section {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
+    
   .footer-logo-block {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    order: 1; 
   }
-  
+
   .footer-logo {
     font-weight: 500;
     font-size: 16px;
     color: #fbfbfb;
   }
-  
+
   .footer-socials {
     display: flex;
     gap: 10px;
     margin-bottom: 20px;
   }
-  
+
   .footer-socials li a {
     display: inline-flex;
     align-items: center;
@@ -53,7 +47,7 @@
     width: 36px;
     height: 36px;
   }
-  
+
   .footer-icon {
     width: 18px;
     height: 18px;
@@ -61,11 +55,11 @@
     opacity: 0.8;
     transition: fill .3s, opacity .3s;
   }
-  
+
   .footer-socials li a:hover .footer-icon {
     opacity: 1;
   }
-  
+
   .footer-phone {
     display: flex;
     align-items: center;
@@ -82,10 +76,11 @@
     color: #fbfbfb;
     text-decoration: none;
     margin-bottom: 40px;
+    order: 2;
   }
-  
+
   .footer-slogan {
-    
+
     font-weight: 600;
     font-size: 20px;
     line-height: 1.2;
@@ -98,8 +93,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    order: 3;
   }
-  
+
   .footer-bottom-top {
     display: flex;
     align-items: flex-start;
@@ -107,7 +103,7 @@
     flex-direction: row;
     gap: 49px;
   }
-  
+
   .footer-nav-menu {
     display: flex;
     flex-wrap: wrap;
@@ -116,25 +112,25 @@
     gap: 16px;
     row-gap: 8px;
   }
-  
+
   .footer-nav-link {
-   
+
     font-weight: 500;
     font-size: 12px;
     text-transform: uppercase;
     color: #fbfbfb;
     text-decoration: none;
   }
-  
+
   .footer-contact-text {
-  
+
     font-weight: 500;
     font-size: 12px;
     line-height: 1.3333;
     color: #fbfbfb;
     margin: 0;
   }
-  
+
   .footer-divider {
     border: none;
     height: 1px;
@@ -142,22 +138,22 @@
     width: 279px;  
     margin: 24px auto;
   }
-  
+
   .footer-bottom-bottom {
     display: flex;
     flex-direction: column;
     gap: 8px;
   }
-  
+
   .footer-small-text {
-  
+
     font-weight: 500;
     font-size: 10px;
     line-height: 1.4;
     color: rgba(251,251,251,0.5);
     margin: 0;
   }
-  
+
   .footer-legal-links {
     display: flex;
     gap: 20px;
@@ -165,9 +161,9 @@
     padding: 0;
     margin: 0;
   }
-  
+
   .footer-legal-links a {
-  
+
     font-weight: 500;
     font-size: 10px;
     line-height: 1.4;
@@ -175,115 +171,91 @@
     text-align: right;
     color: rgba(251, 251, 251, 0.5);
   }
- 
-  /* ================================
-     Адаптація для 375px
-     ================================ */
-  @media (min-width: 375px) {
-    .footer-group {
-      max-width: 375px;
-    }
-  }
-  
-  /* ================================
-     Планшет (від 768px)
-     ================================ */
-  @media (min-width: 768px) {
-    .footer-group {
-      max-width: 768px;
-      padding: 40px 40px;
-    }
-    .footer-phone {
-      position: absolute;
-      top: 0;
-      right: 0;
-      margin: 0;
-      font-size: 14px;
-    }
-    .footer-logo{
-      font-size: 20px;
-    }
-  .footer-slogan {
-      max-width: 524px;
-      margin: 0 auto;
-      font-size: 28px;
-      line-height: 1.14286;
-    }
-  .footer-socials {
-    margin-bottom: 86px;
-  }
-  .footer-bottom-top {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;  
-    gap: 62px;
-  }
-  .footer-nav-menu {
-    display: flex;           
-    gap: 19px;
-  }
-  .footer-nav-link {
-    font-size: 14px;
-    text-align: center;
-  }
-  .footer-contact-text {
-    font-size: 14px;
-    white-space: normal;      
-    max-width: 162px;      
-  }
-  .footer-divider {
-    width: calc(100% - 80px);
-    margin: 28px auto;
-  }
-  .footer-bottom-bottom {
-    display: flex;            
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    gap: 0;
-  }
-  .footer-small-text {
-    font-size: 14px;
-  }
-  .footer-legal-links a {
-    font-size: 14px;
-  }
-  }
-  @media (max-width: 767px) {
-   
-    .footer-logo-block { 
-      order: 1; 
-    }
-    .footer-phone {
-      order: 2;
-    }
-    .footer-slogan {
-      order: 3;
-    }
-  }
-  
-  /* ================================
-     Десктоп (від 1280px)
-     ================================ */
-  @media (min-width: 1280px) {
-    .footer-group {
-      width: 100%;
-      max-width: 1280px;
-      padding-bottom: 28px;
-      gap: 126px;
-    }
 
-    .footer-top-section {
-      display: flex; 
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: flex-start;
+  @media only screen and (min-width: 768px) { 
+      .footer-container {
+        padding: 40px 32px 32px 32px;
+      }
+      .footer-group {
+        padding: 40px 40px 28px 40px;
+        gap: 100px;
+      }
+        .footer-phone {
+          position: absolute;
+          top: 0;
+          right: 0;
+          margin: 0;
+          font-size: 14px;
+        }
+        .footer-logo{
+          font-size: 20px;
+        }
+      .footer-slogan {
+          max-width: 524px;
+          margin: 0 auto;
+          font-size: 28px;
+          line-height: 1.14286;
+        }
+      .footer-socials {
+        margin-bottom: 86px;
+      }
+      .footer-bottom-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;  
+        gap: 62px;
+      }
+      .footer-nav-menu {
+        display: flex;           
+        gap: 19px;
+      }
+      .footer-nav-link {
+        font-size: 14px;
+        text-align: center;
+      }
+      .footer-contact-text {
+        font-size: 14px;
+        white-space: normal;      
+        max-width: 162px;      
+      }
+      .footer-divider {
+        width: calc(100% - 80px);
+        margin: 28px auto;
+      }
+      .footer-bottom-bottom {
+        display: flex;            
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0;
+      }
+      .footer-small-text {
+        font-size: 14px;
+      }
+      .footer-legal-links a {
+        font-size: 14px;
+      }
+      }
+      @media only screen and (min-width: 1280px) {
+       .footer-container {
+        padding-top: 50px;
+        margin: 0;
+      }
+      .footer-group {
+        gap: 126px;
+      }  
+      .footer-top-section {
+        display: flex; 
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+      }
+      .footer-slogan {
+      margin-left: 178px;
+      }
+      .footer-nav-menu {
+        gap: 40px;
+      }
+      
     }
-    .footer-slogan {
-    margin-left: 178px;
-    }
-    .footer-nav-menu {
-      gap: 40px;
-    }
-  }
   
