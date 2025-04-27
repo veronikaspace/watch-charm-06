@@ -1,5 +1,5 @@
 .section-about {
-  margin-bottom: 60px;
+  padding: 30px 0;
 }
 
 .descr-div {
@@ -57,7 +57,7 @@
 
 @media (min-width: 768px) {
   .section-about {
-    margin-bottom: 80px;
+    padding: 40px 0;
   }
 
   .descr-div {
@@ -90,7 +90,7 @@
 
 @media (min-width: 1280px) {
   .section-about {
-    margin-bottom: 100px;
+    padding: 50px;
   }
 
   .about-container {
