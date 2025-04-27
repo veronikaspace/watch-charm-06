@@ -1,140 +1,110 @@
 
 /* ------reviews section------- */
-
-* {
-  margin: 0;
-  padding: 0;
+.reviews-section{
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
-
-.reviews_section{
-  margin-bottom: 60px;
-}
-
-.reviews_title {
-  font-weight: 600;
+.reviews-title {
+  
   font-size: 32px;
-  line-height: 100%;
-  letter-spacing: -0.02em;
   margin-bottom: 24px;
 }
 
-.name_reviews {
-  font-weight: 500;
+.name-reviews {
     font-size: 16px;
-    line-height: 125%;
-    letter-spacing: -0.02em;
     text-align: center;
     margin-bottom: 8px;
 }
-.responce_list{
+.response-list{
 display: flex;
 }
 
-.review_card_wrapper{  
-  
-}
-
-.responce {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 125%;
+.response {
+  font-size: 14px;
+  line-height: 129%;
   color: rgba(12, 12, 12, 0.4);
   max-width: 263px;
-  margin: 0 auto;
   text-align: center;
   
   
 }
 
-.responce_list_item{
+.response-list-item{
   border-radius: 30px;
     padding: 32px 36px;
-    width: 335px;
+    max-width: 335px;
     background-color: #f3f3f3;
     display: flex;
-   
     align-items: center;
     
 }
-.responcer_image{
-  width: 56px;
-    height: 56px;
+.responser-image{
     border-radius: 50%;
-    display: flex;
       margin: 0 auto;
       margin-bottom: 24px;
 
 }
-.person_2,
-.person_3 {
+.person-2,
+.person-3 {
   display: none;
 }
 
 
-@media screen and (min-width: 768px) and (min-resolution: 2x) {
-  .container {
-    max-width: 768px;
-    padding: 0 32px;
-  }
-    .reviews_title {
+@media screen and (min-width: 768px) {
+ 
+    .reviews-title {
       font-size: 48px;
       line-height: 92%;
       margin-bottom: 40px;
     }
 
-    .name_reviews {
+    .name-reviews {
       font-size: 18px;
       line-height: 110%;
     }
 
-    .responce {
-     font-weight: 500;
-      font-size: 16px;
-      line-height: 125%;
+    .response {
+      font-size: 14px;
       max-width: 272px;
         
         }
-    .responce_list {
+    .response-list {
       flex-direction: row;
       flex-wrap: nowrap;
       justify-content: center;
       gap: 16px;
     }
   
-    .responce_list_item {
-      width: 344px;
+    .response-list-item {
       width: calc((100% - 16px) / 2);
       height: auto;
     }
-    .reviews_section {
-          margin-bottom: 80px;
+    .reviews-section {
+          padding-top: 40px;
+          padding-bottom: 40px;
         }
-        .person_2{
+        .person-2{
           display:block;
         }
-   .person_3{
+   .person-3{
     display: none;
    }
 }
-  @media screen and (min-width: 1280px) and (min-resolution: 2x) {
-  .container {
-    max-width: 1280px;
-    padding: 0 100px;
-  }
+  @media screen and (min-width: 1280px) {
+  
 
-    .reviews_title {
-      font-size: 48px;
+    .reviews-title {
       line-height: 92%;
-      margin-bottom: 40px;
+      padding-left: 50px;
     }
 
-    .name_reviews {
+    .name-reviews {
       font-size: 18px;
       line-height: 110%;
     }
 
-    .responce {
+    .response {
      font-weight: 500;
      font-size: 16px;
      line-height: 125%;
@@ -143,22 +113,19 @@ display: flex;
      
     }
 
-  .responce_list_item {
-    width: 370px;
-    width: calc((100% - 40px) / 3);
+  .response-list-item {
     
+    width: calc((100% - 40px) / 3);
   }
-    .reviews_section {
-      margin-bottom: 100px;
+    .reviews-section {
+      padding-top: 50px;
+      padding-bottom: 50px;
     }
-    .responce_list {
+    .response-list {
           flex-wrap:nowrap;
           gap: 20px;
         }
-        .person_2{
-          display:block;
-        }
-        .person_3{
+        .person-3{
          display: block;
           }
       }
