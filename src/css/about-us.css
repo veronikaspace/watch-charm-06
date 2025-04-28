@@ -3,7 +3,6 @@
 }
 
 .descr-div {
-  max-width: 335px;
   background-color: #F3F3F3;
   padding: 40px 20px;
   border-radius: 30px;
@@ -48,11 +47,11 @@
 
 .act-img-div {
   max-width: 335px;
-  border-radius: 30px;
 }
 
 .abt-img {
   object-fit: contain;
+  border-radius: 30px;
 }
 
 @media (min-width: 768px) {
@@ -85,6 +84,7 @@
 
   .abt-img {
     height: 512px;
+    border-radius: 50px;
   }
 }
 
