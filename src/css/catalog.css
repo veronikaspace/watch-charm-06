@@ -52,7 +52,6 @@
   text-align: left;
 }
 
-/* Приховує останні дві картки за замовчуванням */
 .catalog-card:nth-child(n + 5) {
   display: none;
 }
@@ -99,11 +98,11 @@
   }
 
   .catalog-card:nth-child(n + 5) {
-    display: block; /* Скасовує приховування карток */
+    display: block;
   }
 
   .show-more-btn {
-    display: none; /* Приховує кнопку на планшетах і десктопах */
+    display: none;
   }
 
   .catalog-card {
@@ -126,15 +125,12 @@
   .catalog-card-title {
     font-size: 20px;
     line-height: 1;
-    /* Додаємо обмеження */
-    white-space: nowrap; /* Текст у одному рядку */
-    overflow: hidden; /* Приховує текст, що виходить за межі */
-    text-overflow: ellipsis; /* Додає три крапки (...) */
-    max-width: 280px; /* Обмеження ширини тексту */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 280px;
   }
 }
-/* desktop */
-
 @media screen and (min-width: 1280px) {
   .section-catalog {
     padding: 50px 65px;
@@ -153,7 +149,6 @@
   .catalog-card-title {
     font-size: 20px;
     line-height: 1;
-    /* Додаємо обмеження */
-    max-width: 304px; /* Обмеження ширини тексту */
+    max-width: 304px;
   }
 }
