@@ -16,14 +16,19 @@
   font-weight: 500;
   text-transform: lowercase;
   text-decoration: none;
+  line-height: 1;
+  letter-spacing: 0.02em;
   color: #0c0c0c;
+}
+button {
+  cursor: pointer;
 }
 
 .burger-btn {
-  background: none;
   border: none;
-  cursor: pointer;
+  background-color: transparent;
   display: block;
+  padding: 0;
 }
 
 .burger-icon {
@@ -42,13 +47,28 @@
     max-width: 768px;
     padding: 0 24px;
   }
+  .burger-icon {
+    width: 40px;
+    height: 40px;
+    fill: #1c1c1c;
+  }
+
+  .logo {
+    font-size: 20px;
+  }
 }
 
 @media screen and (min-width: 1158px) {
   .burger-btn {
     display: none;
   }
+  .container {
+    max-width: 1158px;
+  }
 
+  .logo {
+    font-size: 20px;
+  }
   .header-nav {
     display: flex;
   }
@@ -63,10 +83,14 @@
 
   .nav-list .link {
     text-decoration: none;
-    font-weight: 500;
-    font-size: 16px;
     color: #1c1c1c;
     transition: color 250ms;
+    font-family: Gilroy;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0%;
+    text-align: center;
   }
 
   .nav-list .link:hover,
@@ -109,17 +133,9 @@
     list-style: none;
   }
 
-  .social-icons {
-    display: flex;
-    gap: 16px;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-
   .social-icons svg {
-    width: 24px;
-    height: 24px;
+    width: 36px;
+    height: 36px;
     fill: #1c1c1c;
     transition: fill 0.3s;
   }
