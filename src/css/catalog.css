@@ -2,12 +2,8 @@
 
 .section-catalog {
   max-width: 368px;
-  display: flex;
-  justify-content: center;
-  /* align-items: center; */
   padding: 30px 20px;
   margin: 0 auto;
-  /* max-width: 100%; */
 }
 
 .catalog-section-title {
@@ -20,32 +16,25 @@
 
 .catalog-list {
   display: flex;
-  flex-direction: column; /* Картки розташовуються одна під одною */
-  align-items: center; /* Центрує картки по горизонталі */
-  gap: 20px; /* Відстань між картками */
   flex-wrap: wrap;
   justify-content: center;
+  gap: 20px; /* Відстань між картками */
 }
 
 .catalog-card {
+  position: relative;
   width: 335px;
   height: 364px;
   border: 1px solid rgba(12, 12, 12, 0.05);
   border-radius: 30px;
   background: #f3f3f3;
-  display: flex;
-  flex-direction: column;
 }
 
 .catalog-card-image {
-  display: flex;
-  justify-content: center; /* Центрує картинку по горизонталі */
-  align-items: center;
   padding: 42px 64px 28px; /* Відступи: зверху, з боків з низу*/
 }
 
 .catalog-card-content {
-  display: flex;
   flex-direction: column;
   padding: 0 28px 24px;
 }
@@ -80,8 +69,7 @@
   line-height: 1.28;
   text-align: center;
   color: #fbfbfb;
-  cursor: pointer; /* Додає курсор у вигляді руки при наведенні */
-  justify-content: center;
+  /* Додає курсор у вигляді руки при наведенні */
   align-items: center;
   margin: 40px auto 0; /* Відступ між останньою карткою і кнопкою */
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -104,7 +92,6 @@
   .catalog-section-title {
     font-size: 48px; /* Розмір шрифту для заголовка */
     line-height: 0.92; /* Міжрядковий інтервал */
-    letter-spacing: -0.02em;
     color: #0c0c0c;
     margin-bottom: 40px; /* Відстань між заголовком і картками */
     text-align: left; /* Вирівнювання тексту по лівому краю */
@@ -112,7 +99,7 @@
   }
 
   .catalog-card:nth-child(n + 5) {
-    display: flex; /* Скасовує приховування карток */
+    display: block; /* Скасовує приховування карток */
   }
 
   .show-more-btn {
@@ -125,17 +112,10 @@
     flex-basis: calc((100% - 16px) / 2);
   }
   .catalog-card-image {
-    display: flex;
-    justify-content: center; /* Центрує картинку по горизонталі */
-    align-items: center;
     padding: 34px 38px 20px; /* Відступи: зверху/знизу, з боків */
   }
 
   .catalog-list {
-    margin: 0 auto; /* Центрує контент */
-    flex-direction: row; /* Розташовує картки в ряд */
-    flex-wrap: wrap; /* Дозволяє переносити картки на новий рядок */
-    justify-content: center; /* Центрує картки */
     gap: 32px 16px; /* Відстань між картками */
   }
 
@@ -157,11 +137,7 @@
 
 @media screen and (min-width: 1280px) {
   .section-catalog {
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
     padding: 50px 65px;
-    margin: 0 auto;
     max-width: 1280px;
   }
   .catalog-card {
@@ -172,12 +148,6 @@
 
   .catalog-list {
     gap: 32px 24px;
-    max-width: 1280px; /* Встановлює обмеження для десктопів */
-  }
-  .catalog-card-image {
-    /* display: flex; */
-    justify-content: center; /* Центрує картинку по горизонталі */
-    align-items: center;
   }
 
   .catalog-card-title {
