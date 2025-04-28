@@ -1,11 +1,13 @@
+/* Menu */
+
 .menu-overlay {
   position: fixed;
   top: 0;
-  left: 0;
+  right: 0;
   width: 100%;
   height: 100%;
-  max-width: 200px;
-  max-height: 812px;
+  /* max-width: 200px;
+  max-height: 812px; */
   background-image: linear-gradient(rgba(12, 12, 12, 0.92)),
     url(/img/menu-fon/fon-clock-mob-min.jpg);
   background-repeat: no-repeat;
@@ -71,6 +73,7 @@
 .menu-close-btn:focus {
   border: none;
   fill: #ffffff;
+  opacity: 0, 8;
 }
 
 .menu-nav {
