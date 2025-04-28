@@ -44,8 +44,8 @@
     border: 1px solid rgba(251,251,251,0.1);
     border-radius: 10px;
     padding: 8px;
-    width: 36px;
-    height: 36px;
+    width: 34px;
+    height: 34px;
   }
 
   .footer-icon {
@@ -71,7 +71,7 @@
     font-family: "Gilroy", sans-serif;
     font-weight: 500;
     font-size: 12px;
-    line-height: 1.3333;
+    line-height: 1.33;
     text-transform: uppercase;
     color: #fbfbfb;
     text-decoration: none;
@@ -117,21 +117,22 @@
 
     font-weight: 500;
     font-size: 12px;
-    text-transform: uppercase;
+    
     color: #fbfbfb;
     text-decoration: none;
   }
 
   .footer-contact-text {
-
+max-width: 83px;
     font-weight: 500;
     font-size: 12px;
-    line-height: 1.3333;
+    line-height: 1.33;
     color: #fbfbfb;
     margin: 0;
   }
 
   .footer-divider {
+    width: 100%;
     border: none;
     height: 1px;
     background-color: rgba(251, 251, 251, 0.1);
@@ -180,7 +181,10 @@
         padding: 40px 40px 28px 40px;
         gap: 100px;
       }
+      
         .footer-phone {
+          width: 160px;
+          height: 48px;
           position: absolute;
           top: 0;
           right: 0;
@@ -194,10 +198,14 @@
           max-width: 524px;
           margin: 0 auto;
           font-size: 28px;
-          line-height: 1.14286;
+          line-height: 1.14;
         }
       .footer-socials {
         margin-bottom: 86px;
+      }
+      .footer-socials li a {
+        width: 36px;
+        height: 36px; 
       }
       .footer-bottom-top {
         display: flex;
