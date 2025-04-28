@@ -3,7 +3,8 @@
 }
 
 .story-container {
-  padding: 60px 0 60px 28px;
+  padding: 60px 28px;
+  min-width: unset;
   background-color: #0c0c0c;
   border-radius: 30px;
   background-image: url(/img/story/story-img-mob-min.png);
