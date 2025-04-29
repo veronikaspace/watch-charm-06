@@ -51,15 +51,14 @@
   transition: opacity 300 cubic-bezier(0.4, 0, 0.2, 1);
   background-color: transparent;
 }
-.footer-icon {
+.footer-soc-link {
   fill: #fbfbfb;
   opacity: 0.8;
 }
 
-.footer-icon:hover,
-.footer-icon:focus {
+.footer-soc-link:hover,
+.footer-soc-link:focus {
   opacity: initial;
-  fill: #fbfbfb;
 }
 
 .footer-phone {
