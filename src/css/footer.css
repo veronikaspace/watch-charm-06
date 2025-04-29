@@ -247,7 +247,6 @@ max-width: 83px;
       @media only screen and (min-width: 1280px) {
        .footer-container {
         padding-top: 50px;
-        margin: 0;
       }
       .footer-group {
         gap: 126px;
