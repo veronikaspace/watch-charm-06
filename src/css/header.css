@@ -53,7 +53,7 @@ button {
   }
 }
 
-@media screen and (min-width: 1158px) {
+@media screen and (min-width: 1280px) {
   .burger-btn {
     display: none;
   }

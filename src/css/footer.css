@@ -158,13 +158,10 @@
 }
 
 .footer-legal-links {
-  display: flex;
+  display: inline-flex;
   gap: 20px;
   list-style: none;
-  padding: 0;
-  margin: 0;
 }
-
 .footer-legal-links a {
   font-weight: 500;
   font-size: 10px;
