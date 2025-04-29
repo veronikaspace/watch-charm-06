@@ -1,9 +1,10 @@
 .menu-overlay {
   position: fixed;
   top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  right: 0;
+  z-index: 9999;
+  width: 200px;
+  height: 812px;
   background-image: linear-gradient(rgba(12, 12, 12, 0.92)),
     url(/img/menu-fon/fon-clock-mob-min.jpg);
   background-repeat: no-repeat;
@@ -14,8 +15,8 @@
   visibility: hidden;
   pointer-events: none;
 
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 300ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu-overlay.is-open {
@@ -24,7 +25,7 @@
   pointer-events: auto;
 }
 
-.menu-container {
+.mob-menu-container {
   position: relative;
   padding-top: 240px;
   padding-bottom: 40px;
@@ -56,8 +57,8 @@
   border: none;
   padding: 0;
   line-height: 1;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu-icon-close {
@@ -91,7 +92,7 @@
   line-height: 1.29;
   text-align: center;
   color: #fbfbfb;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
   text-decoration: none;
   position: relative;
 }
@@ -104,16 +105,24 @@
   color: #fbfbfb;
 }
 
-.menu-nav-link.active::after {
+.menu-nav-link::after {
   content: '';
   position: absolute;
-  bottom: -12px;
+  bottom: -9px;
   left: 50%;
   transform: translateX(-50%);
   width: 8px;
   height: 8px;
   background-color: #4262ff;
   border-radius: 50%;
+  opacity: 0;
+  transition: opacity 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-nav-link:hover::after,
+.menu-nav-link:focus::after,
+.menu-nav-link.active::after {
+  opacity: 1;
 }
 
 .menu-soc-list {
@@ -136,11 +145,12 @@
 
 .menu-icon-soc {
   fill: #fbfbfb;
+  opacity: 0.8;
 }
 
-.menu-icon-link:hover,
-.menu-icon-link:focus {
-  opacity: 0.8;
+.menu-icon-soc:hover,
+.menu-icon-soc:focus {
+  fill: #fbfbfb;
 }
 
 .social-icons {
@@ -150,6 +160,8 @@
 
 @media screen and (min-width: 768px) {
   .menu-overlay {
+    width: 330px;
+    height: 1024px;
     background-image: linear-gradient(rgba(12, 12, 12, 0.92)),
       url(/img/menu-fon/fon-clock-tab-min.jpg);
   }
@@ -161,20 +173,19 @@
     }
   }
 
-  .menu-container {
+  .tab-menu-container {
+    padding-top: 310px;
     padding-bottom: 50px;
   }
 
   .menu-close-btn {
-    width: 40px;
-    height: 40px;
     top: 26px;
     right: 32px;
   }
 
   .tab-menu-icon-close {
-    width: 20px;
-    height: 20px;
+    width: 40px;
+    height: 40px;
   }
 
   .menu-nav-list {
@@ -184,6 +195,11 @@
   .menu-icon-link {
     width: 36px;
     height: 36px;
+  }
+
+  .menu-icon-soc {
+    width: 20px;
+    height: 20px;
   }
 }
 
