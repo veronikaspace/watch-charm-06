@@ -84,11 +84,6 @@ button {
     text-align: center;
   }
 
-  /* .nav-list .link:hover,
-  .nav-list .link:focus {
-    color: #4d5ae5;
-  } */
-
   .link::after {
     content: '';
     position: absolute;
@@ -149,10 +144,3 @@ button {
     flex-shrink: 0;
   }
 }
-
-  
- 
-   
-   
- 
-
