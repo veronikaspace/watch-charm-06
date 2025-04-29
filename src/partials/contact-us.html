@@ -1,0 +1,81 @@
+<section class="section-contact" id="contact-us">
+  <div class="container contact-container">
+    <h2 class="contact-title">Contact us</h2>
+    <div class="contact-box">
+      <div class="contact-sec">
+        <p class="contact-text">
+          Please use the form below to contact us. Enter your name, email,
+          phone, and message and we'll get back to you shortly.
+        </p>
+        <form class="contact-form">
+          <label class="" for="user-name"></label>
+          <input
+            class="contact-input"
+            type="text"
+            name="user-name"
+            id="user-name"
+            placeholder="Name"
+            required
+          />
+          <label class="" for="email"></label>
+          <input
+            class="contact-input"
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email"
+            required
+            pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+          />
+          <label class="" for="phone"></label>
+          <input
+            class="contact-input"
+            type="tel"
+            name="tel"
+            id="phone"
+            placeholder="+380"
+            required
+            pattern="^\+380-\d{2}-\d{3}-\d{2}-\d{2}$"
+          />
+          <label for="user-comment"></label>
+          <textarea
+            class="contact-area"
+            name="user-comment"
+            id="user-comment"
+            placeholder="Comment"
+            required
+          ></textarea>
+        </form>
+        <button class="contact-btn">Send</button>
+      </div>
+      <picture>
+        <source
+          media="(min-width: 1280px)"
+          srcset="
+            /img/contact-us/contact-desk-min.jpg    1x,
+            /img/contact-us/contact-desk@2x-min.jpg 2x
+          "
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            /img/contact-us/contact-tablet-min.jpg    1x,
+            /img/contact-us/contact-tablet@2x-min.jpg 2x
+          "
+        />
+        <source
+          media="(max-width: 767px)"
+          srcset="
+            /img/contact-us/contact-mob-min.jpg    1x,
+            /img/contact-us/contact-mob@2x-min.jpg 2x
+          "
+        />
+        <img
+          src="/img/contact-us/contact-desk-min.jpg"
+          alt="Watch"
+          class="contact-img"
+        />
+      </picture>
+    </div>
+  </div>
+</section>
