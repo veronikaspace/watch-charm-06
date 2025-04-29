@@ -57,7 +57,7 @@
   border-radius: 16px;
   display: block;
   max-width: 160px;
-  padding: 15px 0;
+  padding: 15px 43px 15px 44px;
 }
 
 @media only screen and (min-width: 768px) {
