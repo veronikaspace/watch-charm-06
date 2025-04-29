@@ -62,14 +62,14 @@
 }
 
 .menu-close-btn {
-  opacity: 0.8;
+  opacity: initial;
   fill: #ffffff;
 }
 
 .menu-close-btn:hover,
 .menu-close-btn:focus {
   border: none;
-  opacity: initial;
+  opacity: 0.8;
   fill: #ffffff;
 }
 
