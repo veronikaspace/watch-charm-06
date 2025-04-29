@@ -1,3 +1,85 @@
 <section class="section-hero">
-  <div class="container hero-container">Hero</div>
+  <div class="container hero-container">
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1 class="hero-title">
+          Welcome to our <span class="hero-accent">collection</span> of premium
+          watches
+        </h1>
+        <p class="hero-descr">
+          Our watches are not just timepieces, but also an expression of your
+          personality and lifestyle. From classic designs to modern ones, we
+          have a watch to suit every taste and occasion.
+        </p>
+      </div>
+
+      <div class="hero-wrapper">
+        <div class="hero-reviews">
+          <ul class="hero-list">
+            <li class="hero-item">
+              <img
+                src="/img/reviews/reviews-1.png"
+                srcset="
+                  /img/reviews/reviews-1.png    1x,
+                  /img/reviews/reviews-1@2x.png 2x
+                "
+                alt="Victoria Romashenko"
+                width="44"
+                height="44"
+                class="hero-avatar"
+              />
+            </li>
+            <li class="hero-item">
+              <img
+                src="/img/reviews/reviews-2.png"
+                srcset="
+                  /img/reviews/reviews-2.png    1x,
+                  /img/reviews/reviews-2@2x.png 2x
+                "
+                alt="John Wax"
+                width="44"
+                height="44"
+                class="hero-avatar"
+              />
+            </li>
+            <li class="hero-item">
+              <img
+                src="/img/reviews/reviews-3.png"
+                srcset="
+                  /img/reviews/reviews-3.png    1x,
+                  /img/reviews/reviews-3@2x.png 2x
+                "
+                alt="Anastasia Trachuk"
+                width="44"
+                height="44"
+                class="hero-avatar"
+              />
+            </li>
+          </ul>
+        </div>
+        <a class="hero-scroll-link" href="#footer">Scroll down</a>
+      </div>
+    </div>
+
+    <picture class="hero-pic">
+      <source
+        media="(min-width: 1280px)"
+        srcset="/img/hero/hero-desk.png 1x, /img/hero/hero-desk@2x.png 2x"
+      />
+      <source
+        media="(min-width: 768px)"
+        srcset="/img/hero/hero-tab.png 1x, /img/hero/hero-tab@2x.png 2x"
+      />
+      <source
+        media="(max-width: 767px)"
+        srcset="/img/hero/hero-mob.png 1x, /img/hero/hero-mob@2x.png 2x"
+      />
+      <img
+        src="/img/hero/hero-desk.png"
+        alt="Victoria Romashenko"
+        width="1150"
+        height="500"
+      />
+    </picture>
+  </div>
 </section>
