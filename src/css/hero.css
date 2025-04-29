@@ -70,6 +70,7 @@
   letter-spacing: -0.02em;
   text-decoration: underline;
   color: #0c0c0c;
+  transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-scroll-link:hover,
@@ -170,3 +171,11 @@
     height: 60px;
   }
 }
+
+
+
+
+
+ 
+
+ 
