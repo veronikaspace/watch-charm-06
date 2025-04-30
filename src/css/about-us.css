@@ -28,7 +28,6 @@
 .abt-sec-link {
   font-size: 14px;
   line-height: 1.29;
-  text-align: center;
   color: #fbfbfb;
   background-color: #3350e9;
   border: none;
@@ -61,7 +60,6 @@
   }
 
   .descr-div {
-    max-width: 704px;
     padding: 80px 60px;
     margin-bottom: 40px;
   }
@@ -103,7 +101,6 @@
   .descr-div {
     max-width: 580px;
     margin-bottom: 0;
-    height: 532px;
   }
 
   .abt-us-title {
