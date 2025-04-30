@@ -1,8 +1,12 @@
-.hero-container {
-  padding: 60px 20px 30px 20px;
+.section-hero {
+  padding: 60px 0 30px 0;
 }
 
 .hero-text {
+  margin-bottom: 28px;
+}
+
+.hero-content {
   margin-bottom: 28px;
 }
 
@@ -31,7 +35,6 @@
 .hero-wrapper {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 28px;
 }
 
 .hero-list {
@@ -171,11 +174,3 @@
     height: 60px;
   }
 }
-
-
-
-
-
- 
-
- 
