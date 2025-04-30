@@ -1,5 +1,6 @@
-.hero-container {
-  padding: 60px 20px 30px 20px;
+.section-hero {
+  padding-top: 60px;
+  padding-bottom: 30px;
 }
 
 .hero-text {
@@ -85,9 +86,10 @@
 }
 
 @media only screen and (min-width: 768px) {
-  .hero-container {
-    padding: 80px 32px 40px 32px;
-  }
+ .section-hero {
+  padding-top: 80px;
+  padding-bottom: 40px;
+}
 
   .hero-content {
     display: flex;
@@ -144,9 +146,10 @@
 }
 
 @media only screen and (min-width: 1280px) {
-  .hero-container {
-    padding: 80px 65px 50px 65px;
-  }
+ .section-hero {
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
 
   .hero-content {
     justify-content: space-between;
