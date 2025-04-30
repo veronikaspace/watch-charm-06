@@ -91,24 +91,29 @@
     padding-top: 40px;
     padding-bottom: 40px;
   }
+  
   .contact-title {
     font-size: 48px;
     line-height: 92%;
     margin-bottom: 40px;
   }
+  
   .contact-box {
     gap: 40px;
   }
+  
   .contact-sec {
     border-radius: 50px;
     padding: 50px 122px;
     width: 704px;
   }
+  
   .contact-text {
     font-size: 16px;
     line-height: 125%;
     margin-bottom: 32px;
   }
+  
   .contact-input,
   .contact-area {
     padding: 16px 16px 16px 18px;
@@ -118,15 +123,18 @@
     height: 52px;
     width: 100%;
   }
+  
   .contact-area {
     height: 90px;
     margin-bottom: 32px;
   }
+  
   .contact-btn {
     min-width: 160px;
     height: 52px;
     padding: 17px 63px;
   }
+  
   .contact-img {
     border-radius: 50px;
   }
@@ -136,10 +144,12 @@
     padding-top: 50px;
     padding-bottom: 50px;
   }
+  
   .contact-box {
     flex-direction: row;
     row-gap: 40px;
   }
+  
   .contact-sec {
     width: 580px;
     padding: 50px 60px;
