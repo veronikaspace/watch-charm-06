@@ -7,6 +7,10 @@
   margin-bottom: 28px;
 }
 
+.hero-content {
+  margin-bottom: 28px;
+}
+
 .hero-title {
   font-weight: 600;
   font-size: 40px;
@@ -32,7 +36,6 @@
 .hero-wrapper {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 28px;
 }
 
 .hero-list {
@@ -86,10 +89,10 @@
 }
 
 @media only screen and (min-width: 768px) {
- .section-hero {
-  padding-top: 80px;
-  padding-bottom: 40px;
-}
+  .section-hero {
+    padding-top: 80px;
+    padding-bottom: 40px;
+  }
 
   .hero-content {
     display: flex;
@@ -146,10 +149,10 @@
 }
 
 @media only screen and (min-width: 1280px) {
- .section-hero {
-  padding-top: 100px;
-  padding-bottom: 50px;
-}
+  .section-hero {
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
 
   .hero-content {
     justify-content: space-between;
@@ -174,11 +177,3 @@
     height: 60px;
   }
 }
-
-
-
-
-
- 
-
- 
