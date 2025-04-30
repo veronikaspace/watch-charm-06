@@ -1,3 +1,159 @@
 .section-contact {
-  background-color: darkgray;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
+
+.contact-title {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 100%;
+  letter-spacing: -0.02em;
+  margin-bottom: 24px;
+  color: #0c0c0c;
+}
+
+.contact-box {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-sec {
+  border-radius: 30px;
+  padding: 48px 28px;
+  width: 335px;
+  background-color: #f3f3f3;
+}
+
+.contact-text {
+  font-size: 14px;
+  line-height: 129%;
+  margin-bottom: 28px;
+}
+
+.contact-input,
+.contact-area {
+  border: 1px solid rgba(12, 12, 12, 0.15);
+  border-radius: 12px;
+  padding: 12px 12px 12px 14px;
+  width: 279px;
+  height: 42px;
+  outline: none;
+  margin-bottom: 18px;
+  background-color: transparent;
+  outline: transparent;
+  transition: border-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contact-area {
+  height: 84px;
+  margin-bottom: 28px;
+}
+
+.contact-input::placeholder,
+.contact-area::placeholder {
+  color: #0c0c0c;
+}
+
+.contact-input:focus,
+.contact-area:focus {
+  border-color: #3350e9;
+}
+
+.contact-btn {
+  display: block;
+  border-radius: 16px;
+  padding: 12px 50px;
+  min-width: 134px;
+  height: 42px;
+  border: none;
+  outline: none;
+  transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: #3350e9;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 129%;
+  text-align: center;
+  color: #fbfbfb;
+  cursor: pointer;
+}
+
+.contact-btn:hover {
+  background-color: #1f3cd4;
+}
+
+.contact-img {
+  border-radius: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .section-contact {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  
+  .contact-title {
+    font-size: 48px;
+    line-height: 92%;
+    margin-bottom: 40px;
+  }
+  
+  .contact-box {
+    gap: 40px;
+  }
+  
+  .contact-sec {
+    border-radius: 50px;
+    padding: 50px 122px;
+    width: 704px;
+  }
+  
+  .contact-text {
+    font-size: 16px;
+    line-height: 125%;
+    margin-bottom: 32px;
+  }
+  
+  .contact-input,
+  .contact-area {
+    padding: 16px 16px 16px 18px;
+    font-size: 16px;
+    line-height: 1.25;
+    background: transparent;
+    height: 52px;
+    width: 100%;
+  }
+  
+  .contact-area {
+    height: 90px;
+    margin-bottom: 32px;
+  }
+  
+  .contact-btn {
+    min-width: 160px;
+    height: 52px;
+    padding: 17px 63px;
+  }
+  
+  .contact-img {
+    border-radius: 50px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .section-contact {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  
+  .contact-box {
+    flex-direction: row;
+    row-gap: 40px;
+  }
+  
+  .contact-sec {
+    width: 580px;
+    padding: 50px 60px;
+  }
+}
+
+
