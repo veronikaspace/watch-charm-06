@@ -77,7 +77,13 @@
     text-decoration: none;
     margin-bottom: 40px;
     order: 2;
+    transition: border 300ms cubic-bezier(0.4, 0, 0.2, 1);
   }
+
+.footer-phone:hover,
+.footer-phone:focus {
+  border: 1px solid #1f3cd4;
+}
 
   .footer-slogan {
 
@@ -114,16 +120,15 @@
   }
 
   .footer-nav-link {
-
+    display: block;
     font-weight: 500;
     font-size: 12px;
-    
     color: #fbfbfb;
     text-decoration: none;
   }
 
   .footer-contact-text {
-max-width: 83px;
+    max-width: 83px;
     font-weight: 500;
     font-size: 12px;
     line-height: 1.33;
