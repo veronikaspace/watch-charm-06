@@ -1,3 +1,126 @@
 .section-story {
-  background-color: darkgray;
+  padding: 30px 20px 30px 20px;
+}
+
+.story-container {
+  padding: 60px 28px;
+  min-width: unset;
+  background-color: #0c0c0c;
+  border-radius: 30px;
+  background-image: url(/img/story/story-img-mob-min.png);
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@media screen and (min-resolution: 2x), (-webkit-device-pixel-ratio: 2) {
+  .story-container {
+    background-image: url(/img/story/story-img-mob-2x-min.png);
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.story-text {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: #fbfbfb;
+  margin-bottom: 28px;
+  max-width: 279px;
+}
+
+.story-text-accent {
+  color: rgba(251, 251, 251, 0.5);
+}
+
+.story-contact-link {
+  display: inline-block;
+  padding: 15px 43px 15px 44px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+  color: #fbfbfb;
+  background-color: transparent;
+  text-decoration: none;
+
+  border: 1px solid rgba(251, 251, 251, 0.15);
+  border-radius: 16px;
+
+  transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 300ms cubic-bezier(0.4, 0, 0.2, 1) ;
+}
+
+.story-contact-link:hover,
+.story-contact-link:focus {
+  background-color: #fbfbfb;
+  color: #0c0c0c;
+}
+@media only screen and (min-width: 768px) {
+  .section-story {
+    margin: 0 auto;
+    padding: 40px 0;
+  }
+
+  .story-container {
+    max-width: 704px;
+    padding: 80px 64px;
+    background-image: url(/img/story/story-img-tab-min.png);
+  }
+
+  @media screen and (min-resolution: 2x), (-webkit-device-pixel-ratio: 2) {
+    .story-container {
+      background-image: url(/img/story/story-img-tab-2x-min.png);
+    }
+  }
+
+  .story-text {
+    font-size: 48px;
+    line-height: 0.92;
+    max-width: 576px;
+    margin-bottom: 32px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .section-story {
+    padding: 50px 0;
+  }
+
+  .story-container {
+    max-width: 1150px;
+    padding: 83px 80px;
+    display: flex;
+    gap: 140px;
+    background-image: url(/img/story/story-img-desk-min.png);
+  }
+
+  @media screen and (min-resolution: 2x), (-webkit-device-pixel-ratio: 2) {
+    .story-container {
+      background-image: url(/img/story/story-img-desk-2x-min.png);
+    }
+  }
+
+  .story-text {
+    max-width: 690px;
+    margin-bottom: 0;
+  }
+
+  .story-contact-link {
+    width: 160px;
+    height: 48px;
+  }
 }
