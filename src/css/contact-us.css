@@ -25,6 +25,10 @@
   margin-bottom: 28px;
 }
 
+.inp-wrp {
+  margin-bottom: 18px;
+}
+
 .contact-input,
 .contact-area {
   border: 1px solid rgba(12, 12, 12, 0.15);
@@ -34,7 +38,6 @@
   max-width: 279px;
   height: 42px;
   outline: none;
-  margin-bottom: 18px;
   background-color: transparent;
   outline: transparent;
   resize: none;
@@ -58,6 +61,38 @@
 .contact-input:focus,
 .contact-area:focus {
   border-color: #3350e9;
+}
+
+.contact-input:not(:placeholder-shown):valid {
+  border-color: #32cd32;
+}
+
+.contact-input:not(:placeholder-shown):invalid {
+  border-color: #f4431e;
+}
+
+.text-valid,
+.text-invalid {
+  font-size: 10px;
+  padding-left: 10px;
+  margin-top: 2px;
+  display: none;
+}
+
+.text-valid {
+  color: #32cd32;
+}
+
+.text-invalid {
+  color: #f4431e;
+}
+
+.contact-input:not(:placeholder-shown):valid ~ .text-valid {
+  display: block;
+}
+
+.contact-input:not(:placeholder-shown):invalid ~ .text-invalid {
+  display: block;
 }
 
 .contact-btn {

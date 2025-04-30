@@ -8,35 +8,48 @@
           phone, and message and we'll get back to you shortly.
         </p>
         <form class="contact-form">
-          <label class="" for="user-name"></label>
-          <input
-            class="contact-input"
-            type="text"
-            name="user-name"
-            id="user-name"
-            placeholder="Name"
-            required
-          />
-          <label class="" for="email"></label>
-          <input
-            class="contact-input"
-            type="email"
-            name="email"
-            id="email"
-            placeholder="Email"
-            required
-            pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
-          />
-          <label class="" for="phone"></label>
-          <input
-            class="contact-input"
-            type="tel"
-            name="tel"
-            id="phone"
-            placeholder="+380"
-            required
-            pattern="^\+380-\d{2}-\d{3}-\d{2}-\d{2}$"
-          />
+          <label class="" for="user-name">
+            <div class="inp-wrp">
+              <input
+                class="contact-input"
+                type="text"
+                name="user-name"
+                id="user-name"
+                placeholder="Name"
+                required
+              />
+            </div>
+          </label>
+          <label class="" for="email">
+            <div class="inp-wrp">
+              <input
+                class="contact-input"
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Email"
+                required
+                pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+              />
+              <p class="text-valid">Succes!</p>
+              <p class="text-invalid">Please enter a valid email</p>
+            </div>
+          </label>
+          <label class="" for="phone">
+            <div class="inp-wrp">
+              <input
+                class="contact-input"
+                type="tel"
+                name="tel"
+                id="phone"
+                placeholder="+380"
+                required
+                pattern="^\+380-\d{2}-\d{3}-\d{2}-\d{2}$"
+              />
+              <p class="text-valid">Succes!</p>
+              <p class="text-invalid">Please enter a valid phone number</p>
+            </div>
+          </label>
           <label for="user-comment"></label>
           <textarea
             class="contact-area"
