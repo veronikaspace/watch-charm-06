@@ -20,7 +20,9 @@
   line-height: 1;
   letter-spacing: 0.02em;
   color: #0c0c0c;
+  outline: none;
 }
+
 button {
   cursor: pointer;
 }
@@ -30,6 +32,7 @@ button {
   background-color: transparent;
   display: block;
   padding: 0;
+  outline: none;
 }
 
 .burger-icon {
@@ -91,6 +94,7 @@ button {
     font-size: 14px;
     line-height: 1.29;
     text-align: center;
+    outline: none;
   }
 
   .link::after {
@@ -136,6 +140,7 @@ button {
     border-radius: 10px;
     padding: 8px;
     transition: fill 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    outline: none;
   }
 
   .soc-icon {
