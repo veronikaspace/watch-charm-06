@@ -12,17 +12,11 @@
   color: #0c0c0c;
 }
 
-.contact-box {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
 .contact-sec {
   border-radius: 30px;
   padding: 48px 28px;
-  width: 335px;
   background-color: #f3f3f3;
+  margin-bottom: 20px;
 }
 
 .contact-text {
@@ -31,33 +25,74 @@
   margin-bottom: 28px;
 }
 
+.inp-wrp {
+  margin-bottom: 18px;
+}
+
 .contact-input,
 .contact-area {
   border: 1px solid rgba(12, 12, 12, 0.15);
   border-radius: 12px;
-  padding: 12px 12px 12px 14px;
-  width: 279px;
+  padding-left: 14px;
+  width: 100%;
+  max-width: 279px;
   height: 42px;
   outline: none;
-  margin-bottom: 18px;
   background-color: transparent;
   outline: transparent;
+  resize: none;
   transition: border-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-area {
   height: 84px;
   margin-bottom: 28px;
+  padding-top: 16px;
 }
 
 .contact-input::placeholder,
 .contact-area::placeholder {
   color: #0c0c0c;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
 }
 
 .contact-input:focus,
 .contact-area:focus {
   border-color: #3350e9;
+}
+
+.contact-input:not(:placeholder-shown):valid {
+  border-color: #32cd32;
+}
+
+.contact-input:not(:placeholder-shown):invalid {
+  border-color: #f4431e;
+}
+
+.text-valid,
+.text-invalid {
+  font-size: 10px;
+  padding-left: 10px;
+  margin-top: 2px;
+  display: none;
+}
+
+.text-valid {
+  color: #32cd32;
+}
+
+.text-invalid {
+  color: #f4431e;
+}
+
+.contact-input:not(:placeholder-shown):valid ~ .text-valid {
+  display: block;
+}
+
+.contact-input:not(:placeholder-shown):invalid ~ .text-invalid {
+  display: block;
 }
 
 .contact-btn {
@@ -78,7 +113,8 @@
   cursor: pointer;
 }
 
-.contact-btn:hover {
+.contact-btn:hover,
+.contact-btn:focus {
   background-color: #1f3cd4;
 }
 
@@ -91,69 +127,67 @@
     padding-top: 40px;
     padding-bottom: 40px;
   }
-  
+
   .contact-title {
     font-size: 48px;
     line-height: 92%;
     margin-bottom: 40px;
   }
-  
-  .contact-box {
-    gap: 40px;
-  }
-  
+
   .contact-sec {
     border-radius: 50px;
     padding: 50px 122px;
-    width: 704px;
+    margin-bottom: 40px;
   }
-  
+
   .contact-text {
     font-size: 16px;
     line-height: 125%;
     margin-bottom: 32px;
   }
-  
+
   .contact-input,
   .contact-area {
-    padding: 16px 16px 16px 18px;
+    padding-left: 18px;
     font-size: 16px;
     line-height: 1.25;
     background: transparent;
     height: 52px;
     width: 100%;
+    min-width: 460px;
   }
-  
+
   .contact-area {
     height: 90px;
     margin-bottom: 32px;
   }
-  
+
   .contact-btn {
     min-width: 160px;
     height: 52px;
     padding: 17px 63px;
   }
-  
+
   .contact-img {
     border-radius: 50px;
   }
 }
+
 @media screen and (min-width: 1280px) {
   .section-contact {
     padding-top: 50px;
     padding-bottom: 50px;
   }
-  
+
   .contact-box {
+    display: flex;
     flex-direction: row;
-    row-gap: 40px;
+    gap: 40px;
   }
-  
+
   .contact-sec {
     width: 580px;
     padding: 50px 60px;
+    margin-bottom: 0;
   }
 }
-
-

@@ -1,8 +1,13 @@
-.hero-container {
-  padding: 60px 20px 30px 20px;
+.section-hero {
+  padding-top: 60px;
+  padding-bottom: 30px;
 }
 
 .hero-text {
+  margin-bottom: 28px;
+}
+
+.hero-content {
   margin-bottom: 28px;
 }
 
@@ -31,7 +36,6 @@
 .hero-wrapper {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 28px;
 }
 
 .hero-list {
@@ -85,8 +89,9 @@
 }
 
 @media only screen and (min-width: 768px) {
-  .hero-container {
-    padding: 80px 32px 40px 32px;
+  .section-hero {
+    padding-top: 80px;
+    padding-bottom: 40px;
   }
 
   .hero-content {
@@ -144,8 +149,9 @@
 }
 
 @media only screen and (min-width: 1280px) {
-  .hero-container {
-    padding: 80px 65px 50px 65px;
+  .section-hero {
+    padding-top: 100px;
+    padding-bottom: 50px;
   }
 
   .hero-content {
@@ -171,11 +177,3 @@
     height: 60px;
   }
 }
-
-
-
-
-
- 
-
- 

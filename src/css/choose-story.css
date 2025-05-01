@@ -1,8 +1,9 @@
 .section-story {
-  padding: 30px 20px 30px 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
-.story-container {
+.story-wrap {
   padding: 60px 28px;
   min-width: unset;
   background-color: #0c0c0c;
@@ -15,7 +16,7 @@
 }
 
 @media screen and (min-resolution: 2x), (-webkit-device-pixel-ratio: 2) {
-  .story-container {
+  .story-wrap {
     background-image: url(/img/story/story-img-mob-2x-min.png);
   }
 }
@@ -56,12 +57,13 @@
   color: #fbfbfb;
   background-color: transparent;
   text-decoration: none;
+  outline: none;
 
   border: 1px solid rgba(251, 251, 251, 0.15);
   border-radius: 16px;
 
   transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 300ms cubic-bezier(0.4, 0, 0.2, 1) ;
+    color 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .story-contact-link:hover,
@@ -71,12 +73,11 @@
 }
 @media only screen and (min-width: 768px) {
   .section-story {
-    margin: 0 auto;
-    padding: 40px 0;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 
-  .story-container {
-    max-width: 704px;
+  .story-wrap {
     padding: 80px 64px;
     background-image: url(/img/story/story-img-tab-min.png);
   }
@@ -97,10 +98,11 @@
 
 @media only screen and (min-width: 1280px) {
   .section-story {
-    padding: 50px 0;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 
-  .story-container {
+  .story-wrap {
     max-width: 1150px;
     padding: 83px 80px;
     display: flex;
@@ -109,7 +111,7 @@
   }
 
   @media screen and (min-resolution: 2x), (-webkit-device-pixel-ratio: 2) {
-    .story-container {
+    .story-wrap {
       background-image: url(/img/story/story-img-desk-2x-min.png);
     }
   }
