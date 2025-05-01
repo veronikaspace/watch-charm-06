@@ -13,16 +13,16 @@
       referrerpolicy="no-referrer"
     />
     <script type="module" crossorigin src="/watch-charm-06/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/watch-charm-06/assets/index-DHnWBjtp.css">
+    <link rel="stylesheet" crossorigin href="/watch-charm-06/assets/index-DHjDZky1.css">
   </head>
   <body>
     <header class="header">
   <div class="container header-container">
-    <a href="/index.html" class="logo">watchcharm</a>
+    <a href="./index.html" class="logo">watchcharm</a>
 
     <nav class="header-nav">
       <ul class="nav-list">
-        <li><a href="/index.html" class="link current">Home</a></li>
+        <li><a href="./index.html" class="link current">Home</a></li>
         <li><a href="#about-us" class="link">About Us</a></li>
         <li><a href="#catalog" class="link">Catalog</a></li>
         <li><a href="#sale" class="link">Sale</a></li>
@@ -55,7 +55,7 @@
         </a>
       </li>
     </ul>
-    <button class="burger-btn" type="button" aria-label="Open menu">
+    <button class="burger-btn" type="button" aria-label="Open menu" data-menu-open>
       <svg class="burger-icon" width="34" height="34">
         <use href="/watch-charm-06/assets/icons-DaZ60T7b.svg#icon-burger"></use>
       </svg>
@@ -370,12 +370,14 @@
 
       <section class="section-story">
   <div class="container story-container">
-    <h2 class="visually-hidden">Advertisement</h2>
-    <p class="story-text">
-      Choose <span class="story-text-accent">your story</span>, making every
-      moment unique. Time is your style, and we reveal it.
-    </p>
-    <a href="#contact-us" class="story-contact-link">Contact Us</a>
+    <div class="story-wrap">
+      <h2 class="visually-hidden">Advertisement</h2>
+      <p class="story-text">
+        Choose <span class="story-text-accent">your story</span>, making every
+        moment unique. Time is your style, and we reveal it.
+      </p>
+      <a href="#contact-us" class="story-contact-link">Contact Us</a>
+    </div>
   </div>
 </section>
 
@@ -555,28 +557,86 @@
       <section class="section-contact" id="contact-us">
   <div class="container contact-container">
     <h2 class="contact-title">Contact us</h2>
-  <div class="contact-box">
+    <div class="contact-box">
       <div class="contact-sec">
-        <p class="contact-text">Please use the form below to contact us. Enter your name, email, phone, and message and we'll get back to you shortly.</p>
+        <p class="contact-text">
+          Please use the form below to contact us. Enter your name, email,
+          phone, and message and we'll get back to you shortly.
+        </p>
         <form class="contact-form">
-          <label class="" for="user-name"></label>
-          <input class="contact-input" type="text" name="user-name" id="user-name" placeholder="Name" required/>
-          <label class="" for="email"></label>
-          <input class="contact-input" type="email" name="email" id="email" placeholder="Email" required pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"/>
-          <label class="" for="phone"></label>
-          <input class="contact-input" type="tel" name="tel" id="phone" placeholder="+380" required pattern="^\+380-\d{2}-\d{3}-\d{2}-\d{2}$" />
+          <label class="" for="user-name">
+            <div class="inp-wrp">
+              <input
+                class="contact-input"
+                type="text"
+                name="user-name"
+                id="user-name"
+                placeholder="Name"
+                required
+              />
+            </div>
+          </label>
+          <label class="" for="email">
+            <div class="inp-wrp">
+              <input
+                class="contact-input"
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Email"
+                required
+                pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+              />
+              <p class="text-valid">Succes!</p>
+              <p class="text-invalid">Please enter a valid email</p>
+            </div>
+          </label>
+          <label class="" for="phone">
+            <div class="inp-wrp">
+              <input
+                class="contact-input"
+                type="tel"
+                name="tel"
+                id="phone"
+                placeholder="+380"
+                required
+                pattern="^\+380-\d{2}-\d{3}-\d{2}-\d{2}$"
+              />
+              <p class="text-valid">Succes!</p>
+              <p class="text-invalid">Please enter a valid phone number</p>
+            </div>
+          </label>
           <label for="user-comment"></label>
-          <textarea class="contact-area" name="user-comment" id="user-comment" placeholder="Comment" required></textarea>
-      </form>
-      <button class="contact-btn">Send</button>
+          <textarea
+            class="contact-area"
+            name="user-comment"
+            id="user-comment"
+            placeholder="Comment"
+            required
+          ></textarea>
+        </form>
+        <button class="contact-btn">Send</button>
       </div>
-    <picture>
-      <source media="(min-width: 1280px)" srcset="/watch-charm-06/assets/contact-desk-min-Cud9mAsG.jpg 1x, /watch-charm-06/assets/contact-desk@2x-min-B4O9HIj0.jpg 2x" />
-      <source media="(min-width: 768px)" srcset="/watch-charm-06/assets/contact-tablet-min-DP-HICnW.jpg 1x, /watch-charm-06/assets/contact-tablet@2x-min-qAGZvjOo.jpg 2x" />
-      <source media="(max-width: 767px)" srcset="/watch-charm-06/assets/contact-mob-min-BduldMlR.jpg 1x, /watch-charm-06/assets/contact-mob@2x-min-aOsoijHg.jpg 2x" />
-      <img src="/watch-charm-06/assets/contact-desk-min-Cud9mAsG.jpg" alt="Watch" class="contact-img"/>
-    </picture>
-  </div>
+      <picture>
+        <source
+          media="(min-width: 1280px)"
+          srcset="/watch-charm-06/assets/contact-desk-min-Cud9mAsG.jpg 1x, /watch-charm-06/assets/contact-desk@2x-min-B4O9HIj0.jpg 2x"
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="/watch-charm-06/assets/contact-tablet-min-DP-HICnW.jpg 1x, /watch-charm-06/assets/contact-tablet@2x-min-qAGZvjOo.jpg 2x"
+        />
+        <source
+          media="(max-width: 767px)"
+          srcset="/watch-charm-06/assets/contact-mob-min-BduldMlR.jpg 1x, /watch-charm-06/assets/contact-mob@2x-min-aOsoijHg.jpg 2x"
+        />
+        <img
+          src="/watch-charm-06/assets/contact-desk-min-Cud9mAsG.jpg"
+          alt="Watch"
+          class="contact-img"
+        />
+      </picture>
+    </div>
   </div>
 </section>
 
@@ -643,9 +703,9 @@
 </div>
 </footer>
 
-    <div class="menu-overlay">
+    <div class="menu-overlay" data-menu>
   <div class="mob-menu-container tab-menu-container">
-    <button class="menu-close-btn" type="button" aria-label="Close menu">
+    <button class="menu-close-btn" type="button" aria-label="Close menu" data-menu-close>
       <svg class="menu-icon-close tab-menu-icon-close" width="34" height="34">
         <use href="/watch-charm-06/assets/icons-DaZ60T7b.svg#icon-x"></use>
       </svg>
