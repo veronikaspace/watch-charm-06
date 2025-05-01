@@ -83,7 +83,7 @@
   }
 
   @media screen and (min-resolution: 2x), (-webkit-device-pixel-ratio: 2) {
-    .story-container {
+    .story-wrap {
       background-image: url(/img/story/story-img-tab-2x-min.png);
     }
   }
