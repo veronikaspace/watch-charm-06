@@ -51,6 +51,7 @@
   padding: 8px;
   width: 34px;
   height: 34px;
+  outline: none;
 }
 
 .footer-icon {
@@ -130,6 +131,7 @@
   color: #fbfbfb;
   text-decoration: none;
   transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  outline: none;
 }
 
 .footer-nav-link:focus,
@@ -145,6 +147,7 @@
   color: #fbfbfb;
   margin: 0;
   transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  outline: none;
 }
 
 .footer-contact-text:hover,
@@ -184,6 +187,7 @@
   text-align: right;
   color: rgba(251, 251, 251, 0.5);
   transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  outline: none;
 }
 
 .footer-legal-links a:focus,
