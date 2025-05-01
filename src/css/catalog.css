@@ -60,10 +60,9 @@
   line-height: 1.28;
   text-align: center;
   color: #fbfbfb;
-
   align-items: center;
   margin: 0 auto;
-
+  outline: none;
   transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
