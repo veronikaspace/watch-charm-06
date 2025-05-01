@@ -1,6 +1,6 @@
 .header {
   background-color: #ffffff;
-  padding: 26px 0;
+  padding: 20px 0;
   border-bottom: 1px solid #e7e9fc;
 }
 
@@ -49,6 +49,10 @@ button {
 }
 
 @media screen and (min-width: 768px) {
+  .header {
+    padding: 26px 0;
+  }
+
   .burger-icon {
     width: 40px;
     height: 40px;
@@ -104,8 +108,7 @@ button {
   }
 
   .link:hover::after,
-  .link:focus::after,
-  .link.current::after {
+  .link:focus::after {
     opacity: 1;
   }
 
@@ -149,10 +152,3 @@ button {
     flex-shrink: 0;
   }
 }
-
-  
- 
-   
-   
- 
-
